@@ -17,9 +17,15 @@ class TestPairsArray < MiniTest::Test
 		assert_equal(3, pairs.count)
 	end
 
-	#def test_7_names_returns_3_pairs_odd
-		#pairs = create_pairs(['Dan', 'Marv', 'Tim', 'Shirley', 'Chloe', 'April', 'Brian'])
-		#assert_equal(3, pairs.count)
-	#end
+	def test_7_names_returns_3_pairs_odd
+		pairs = create_pairs(['Dan', 'Marv', 'Tim', 'Shirley', 'Chloe', 'April', 'Brian'])
+		assert_equal(3, pairs.count)
+		#puts pairs
+	end
+	
+	def test_8_names_returns_4_pairs
+		pairs = create_pairs(['Dan', 'Marv', 'Tim', 'Shirley', 'Chloe', 'April', 'Brian', 'Tommy'])
+		assert_equal(4, pairs.count)
+	end
 
 end
